@@ -1,0 +1,199 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --font-18: 17px;
+}
+/* Header Section */
+header {
+    background-color: #1BBC9B;
+    height: 14vh;
+    padding-top: 5vh;
+    font-size: var(--font-18);
+    text-transform: uppercase;
+}
+.header-p {
+    width: 10%;
+    color: white;
+}
+header nav {
+    width: 40%;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+footer a:hover , header a:hover {
+    opacity: .4;
+}
+/* Footer Section */
+footer {
+    background-color: #2F2F2F;
+    padding: 8vh 0;
+    color: white;
+}
+footer .address li , footer .about-me li{
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #20755E;
+    line-height: 1.5;
+}
+footer ul {
+    list-style: none;
+}
+footer h4 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+/* Descraption Section */
+.bg {
+    background-color: #F2F2F2;
+}
+.user-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+/* Project Section */
+.container figcaption h3 {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.project-container figure figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(34, 31, 31);
+}
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+/* Screen size from 350px to 699px */
+@media (min-width: 350px) and (max-width: 699px) {
+    /* Header Section */
+    header section {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-item a {
+        text-decoration: none;
+        color: white;
+        margin-left: 25px;
+    }
+    /* Footer Section */
+    footer section {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer .address, footer .links, footer .about-me {
+        width: 100%;
+        margin: 10px auto;
+    }
+    /* Descraption Section */
+    .container div p {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 14px;
+        color: rgb(80, 78, 78);
+        line-height: 1.6;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+    /* Projects Section */
+    .main-project-container {
+        width: 80%;
+        margin: 50px auto;
+    }
+    .mt-20 {
+        margin-top: 0px;
+    }
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-container figure {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+/* Screen size from 700px */
+@media (min-width: 700px) {
+    /* Header Section */
+    header section {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-item a {
+        text-decoration: none;
+        color: white;
+        margin-left: 30px;
+    }
+    /* Footer Section */
+    footer section {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .address {
+        width: 20%;
+    }
+    footer .links {
+        width: 20%;
+    }
+    footer .about-me {
+        width: 40%;
+    }
+    /* Descraption Section */
+    .container div p {
+        width: 70%;
+        margin: 20px auto;
+        font-size: 14px;
+        color: rgb(80, 78, 78);
+        line-height: 1.6;
+    }
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+    /* Projects Section */
+    .main-project-container {
+        width: 70%;
+        margin: 50px auto;
+    }
+    .mt-20 {
+        margin-top: 30px;
+    }
+    .project-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project-container figure {
+        width: 32%;
+    }
+}
